@@ -1,14 +1,16 @@
-import './styles/App.css';
+import React from 'react';
 import Login from './pages/LoginPage';
-import VerifyOTP from './pages/VerifyOtp';
 import ResendOtp from './pages/ResendOtp';
+import VerifyOtp from './pages/VerifyOtp';
 
-function App() {
+const App = () => {
   return (
     <>
-    <ResendOtp />
+    <Login />
+    {/* <VerifyOtp /> */}
+    {/* <ResendOtp /> */}
     </>
   );
-}
+};
 
 export default App;

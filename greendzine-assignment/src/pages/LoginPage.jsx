@@ -1,11 +1,9 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
 import Header from "../components/Header";
 import CardView from "../components/CardView";
 import Footer from "../components/Footer";
 
 const Login = () => {
-
   return (
     <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-between', height: '100vh'}}>
       <Header />
