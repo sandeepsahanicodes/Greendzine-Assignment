@@ -3,7 +3,6 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import CardView from '../components/CardView';
 
-
 const VerifyOtp = () => {
   return (
     <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-between', height: '100vh'}}>
