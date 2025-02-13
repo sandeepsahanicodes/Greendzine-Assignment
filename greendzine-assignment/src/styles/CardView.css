@@ -1,7 +1,6 @@
 .parent-container {
   display: flex;
   justify-content: space-around;
-  /* background-color: aqua; */
   height: 40vh;
   width: 60vw;
 }
@@ -11,7 +10,6 @@
   flex-direction: column;
   justify-content: space-evenly;
   text-align: center;
-  /* background-color: red; */
   height: 100%;
   width: 100%;
 
@@ -28,14 +26,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: brown; */
   height: 100%;
   width: 100%;
 
-  background: #3547614d 0% 0% no-repeat padding-box;
-  box-shadow: inset 0px 4px 4px #ffffff0f;
+  background: #3547614D 0% 0% no-repeat padding-box;
+  box-shadow: inset 0px 4px 4px #FFFFFF0F;
   mix-blend-mode: normal;
-  border: 1px solid #ffffff1a;
+  border: 1px solid #FFFFFF1A;
   opacity: 1;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
@@ -48,21 +45,20 @@
   width: 70%;
   height: 40px;
   border-radius: 10px;
-  border: none;
   padding: 10px;
   font-size: 20px;
+  color: white;
   background-color: #0000004d;
   box-shadow: inset 0px 3px 3px #fffdfd40, 3px 3px 3px #221e1e47;
   mix-blend-mode: normal;
   border: 1px solid #ffffff1a;
+  outline: none;
 }
 
 .button {
   width: 50%;
   height: 45px;
   border-radius: 25px;
-  /* border: none; */
-
   color: #FFFFFFCC;
   font-size: 20px;
   align-self: center;
