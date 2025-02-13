@@ -1,5 +1,5 @@
-import React from "react";
-import "../styles/CardView.css";
+import React from 'react';
+import '../styles/CardView.css';
 
 const CardView = ({ heading, placeholder, btnText, isResentOtpContainerHidden }) => {
   return (
