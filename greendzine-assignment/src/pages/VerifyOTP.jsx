@@ -1,37 +1,19 @@
 import React, { useState } from 'react';
-// import { useNavigate } from 'react-router-dom';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import CardView from '../components/CardView';
 
-const VerifyOTP = () => {
-  const [otp, setOtp] = useState('');
-  const navigate = useNavigate();
-
-  const handleVerifyOTP = () => {
-    const storedOTP = localStorage.getItem('otp');
-    const otpExpiry = localStorage.getItem('otpExpiry');
-
-    if (Date.now() > otpExpiry) {
-      alert('OTP expired. Please resend OTP.');
-      navigate('/resend-otp');
-    } else if (otp === storedOTP) {
-      alert('OTP verified successfully!');
-      navigate('/dashboard');
-    } else {
-      alert('Invalid OTP. Please try again.');
-    }
-  };
-
+const VerifyOtp = () => {
+  
   return (
-    <div>
-      <h1>Verify OTP</h1>
-      <input
-        type="text"
-        placeholder="Enter OTP"
-        value={otp}
-        onChange={(e) => setOtp(e.target.value)}
-      />
-      <button onClick={handleVerifyOTP}>Verify OTP</button>
+    <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-between', height: '100vh'}}>
+      <Header />
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <CardView heading="Enter Otp sent to email" placeholder="OTP" btnText="Validate" isResentOtpContainerHidden={true}/>
+      </div>
+      <Footer />
     </div>
   );
 };
 
-export default VerifyOTP;
+export default VerifyOtp;

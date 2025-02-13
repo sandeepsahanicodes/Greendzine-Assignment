@@ -55,14 +55,48 @@
   outline: none;
 }
 
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.resend-otp-and-timer-container {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    width: 65%;
+    height: 18px;
+}
+
+.hidden {
+    display: none;
+}
+
+.resend-otp-btn {
+    outline: none;
+    border: none;
+    background: none;
+    color: #999898;
+    font-size: 16px;
+    font-weight: bold;
+}
+.timer-span {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.01px;;
+}
+
 .button {
   width: 50%;
   height: 45px;
   border-radius: 25px;
   color: #FFFFFFCC;
-  font-size: 20px;
+  font-size: 16px;
+  font-weight: bold;
   align-self: center;
-
+  letter-spacing: 0.02px;
   background: transparent
     linear-gradient(
       180deg,

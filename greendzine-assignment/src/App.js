@@ -1,12 +1,12 @@
-import logo from './logo.svg';
 import './styles/App.css';
-import Header from './components/Header';
 import Login from './pages/LoginPage';
+import VerifyOTP from './pages/VerifyOtp';
+import ResendOtp from './pages/ResendOtp';
 
 function App() {
   return (
     <>
-    <Login />
+    <ResendOtp />
     </>
   );
 }
