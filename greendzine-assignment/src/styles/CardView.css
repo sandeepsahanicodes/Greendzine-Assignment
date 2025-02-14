@@ -73,21 +73,35 @@
     display: none;
 }
 
-.resend-otp-btn {
+.resend-otp-btn-enabled {
     outline: none;
+    border: none;
+    background: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+.resend-otp-btn-disabled {
+   outline: none;
     border: none;
     background: none;
     color: #999898;
     font-size: 16px;
     font-weight: bold;
 }
-.timer-span {
+
+.timer-span-enabled {
     color: white;
     font-size: 16px;
     font-weight: bold;
     letter-spacing: 0.01px;;
 }
-
+.timer-span-disabled {
+  color: #999898;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.01px;;
+}
 .button {
   width: 50%;
   height: 45px;
