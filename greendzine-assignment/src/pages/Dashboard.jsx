@@ -14,12 +14,11 @@ const Dashboard = () => {
       style={{
         display: "flex",
         flexDirection: "column",
-        // justifyContent: "space-between",
         height: "100vh",
       }}
     >
       <Header isLogoutButtonHidden={false} />
-      <div style={{ display: "flex", width: "100vw" }}>
+      <div style={{ display: "flex", width: "100vw"}}>
         <SideMenu />
         <div className="charts-container">
           <div className="charts-inventory-container">

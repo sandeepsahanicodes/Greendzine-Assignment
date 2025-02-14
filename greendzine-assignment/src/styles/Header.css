@@ -1,19 +1,22 @@
+
 .header h1 {
   color: #ffffff;
   text-align: center;
-  font: normal bold 32px; 
+  font-weight: bold;
+  font-size: 2rem;
   width: 100%;
 }
 
 .header-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   background: #00000033;
   height: 60px;
+  padding: 0 20px;
 }
 
-.hidden{
+.hidden {
   display: none;
 }
 
@@ -21,8 +24,43 @@
   background: none;
   outline: none;
   border: none;
-  font-size: 20px;
+  font-size: 1.2rem;
   color: white;
   height: 23px;
   margin-right: 23px;
+  cursor: pointer; 
+  transition: color 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 1.8rem;
+  }
+
+  .header-container {
+    height: 50px;
+    padding: 0 15px;
+  }
+
+  .logout-btn {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-container {
+    height: 50px;
+    flex-direction: row;
+    justify-content: center; 
+  }
+
+  .header h1 {
+    font-size: 1.5rem;
+  }
+
+  .logout-btn {
+    font-size: 0.9rem;
+    height: 20px;
+    margin-right: 10px;
+  }
 }

@@ -3,10 +3,10 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  gap: 5%;
+  gap: 2rem;
   margin-bottom: 0%;
-  width: 60px;
-  height: 90vh;
+  width: auto;
+  height: auto;
 
   background: rgba(255, 255, 255, 0.1);
   mix-blend-mode: normal;
@@ -16,15 +16,18 @@
 }
 
 a {
-  height: 10%;
+  height: 50px;
+  width: 2rem;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
+
 .active-tab-home {
     border-left: 5px solid #6dc4b6;
     background-color: #00000033;
     border-radius: 10px 0px 0px 10px;
 }
+
 a:hover {
   background-color: #00000033;
   border-radius: 10px 0px 0px 10px;
@@ -32,8 +35,11 @@ a:hover {
 }
 
 img {
-  height: 30px;
-  margin-top: 1.5rem;
+  height: 1.5rem;
+  margin-top: 10px;
   aspect-ratio: fill;
 }
 
+@media (max-width: 768px) {
+  
+}
