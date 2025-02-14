@@ -13,7 +13,6 @@ const VerifyOtp = () => {
    
     if (Date.now() > parseInt(otpExpiry)) {
       alert("OTP expired. Please resend OTP.");
-      navigate("/resend-otp");
     } else if (otp === storedOTP) {
       navigate("/dashboard");
     } else {

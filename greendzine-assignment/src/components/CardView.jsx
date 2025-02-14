@@ -21,7 +21,7 @@ const CardView = ({ heading, placeholder, btnText, isResentOtpContainerHidden, o
       setIsTimerRunning(false); // Stop the timer when it reaches 0
     }
 
-    // Cleanup the interval on unmount
+    // Cleanup the interval on unmount to avoid memory leaks
     return () => clearInterval(interval);
   }, [isTimerRunning, timeLeft]);
 
@@ -35,11 +35,11 @@ const CardView = ({ heading, placeholder, btnText, isResentOtpContainerHidden, o
   const handleResendOtp = () => {
     setIsTimerRunning(true);
     setTimeLeft(30);
-    const otp = generateOTP(); // Generate OTP
-    alert(`Your OTP is: ${otp}`); // Display OTP
-    localStorage.setItem("otp", otp); // Store OTP in local storage
-    localStorage.setItem("otpExpiry", Date.now() + 30000); // Set OTP expiry (30 seconds)
-    navigate("/verify-otp"); // Navigate to OTP verification page
+    const otp = generateOTP();
+    alert(`Your new OTP is: ${otp}`);
+    localStorage.setItem("otp", otp);
+    localStorage.setItem("otpExpiry", Date.now() + 30000);
+    navigate("/verify-otp");
   };
 
   return (
