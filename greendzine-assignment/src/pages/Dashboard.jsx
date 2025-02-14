@@ -18,7 +18,7 @@ const Dashboard = () => {
       }}
     >
       <Header isLogoutButtonHidden={false} />
-      <div style={{ display: "flex", width: "100vw" }}>
+      <div style={{ display: "flex", height: "100vh" }}>
         <SideMenu />
         <div className="charts-container">
           <div className="charts-inventory-container">
