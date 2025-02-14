@@ -28,10 +28,10 @@
   height: 100%;
   width: 100%;
 
-  background: #3547614D 0% 0% no-repeat padding-box;
-  box-shadow: inset 0px 4px 4px #FFFFFF0F;
+  background: #3547614d 0% 0% no-repeat padding-box;
+  box-shadow: inset 0px 4px 4px #ffffff0f;
   mix-blend-mode: normal;
-  border: 1px solid #FFFFFF1A;
+  border: 1px solid #ffffff1a;
   opacity: 1;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
@@ -55,57 +55,57 @@
 }
 
 .input-container {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .resend-otp-and-timer-container {
-    display: flex;
-    justify-content: space-between;
-    align-self: center;
-    width: 65%;
-    height: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  width: 65%;
+  height: 18px;
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
 
 .resend-otp-btn-enabled {
-    outline: none;
-    border: none;
-    background: none;
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
+  outline: none;
+  border: none;
+  background: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
 }
 .resend-otp-btn-disabled {
-   outline: none;
-    border: none;
-    background: none;
-    color: #999898;
-    font-size: 16px;
-    font-weight: bold;
+  outline: none;
+  border: none;
+  background: none;
+  color: #999898;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .timer-span-enabled {
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    letter-spacing: 0.01px;;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.01px;
 }
 .timer-span-disabled {
   color: #999898;
   font-size: 16px;
   font-weight: bold;
-  letter-spacing: 0.01px;;
+  letter-spacing: 0.01px;
 }
 .button {
   width: 50%;
   height: 45px;
   border-radius: 25px;
-  color: #FFFFFFCC;
+  color: #ffffffcc;
   font-size: 16px;
   font-weight: bold;
   align-self: center;
@@ -168,11 +168,10 @@ p {
   .first-container h1 {
     font-size: 1.3rem;
   }
-  
+
   .resend-otp-and-timer-container {
     width: 80%;
-}
-
+  }
 }
 
 @media (max-width: 480px) {
@@ -182,7 +181,6 @@ p {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    
   }
 
   .first-container,
@@ -211,5 +209,5 @@ p {
 
   .resend-otp-and-timer-container {
     width: 80%;
-}
+  }
 }

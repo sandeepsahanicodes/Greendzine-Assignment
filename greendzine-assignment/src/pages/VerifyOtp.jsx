@@ -10,7 +10,7 @@ const VerifyOtp = () => {
   const handleVerifyOTP = (otp) => {
     const storedOTP = localStorage.getItem("otp");
     const otpExpiry = localStorage.getItem("otpExpiry");
-   
+
     if (Date.now() > parseInt(otpExpiry)) {
       alert("OTP expired. Please resend OTP.");
     } else if (otp === storedOTP) {

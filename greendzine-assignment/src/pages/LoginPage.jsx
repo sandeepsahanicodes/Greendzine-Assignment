@@ -20,12 +20,12 @@ const Login = () => {
 
   const handleEmailValidationAndOtpGeneration = (email) => {
     if (validateEmail(email)) {
-      createOtp() 
+      createOtp();
     } else {
-      alert('Please a valid email.');
+      alert("Please a valid email.");
     }
   };
-  
+
   return (
     <div
       style={{

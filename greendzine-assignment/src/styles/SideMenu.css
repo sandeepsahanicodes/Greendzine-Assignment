@@ -23,9 +23,9 @@ a {
 }
 
 .active-tab-home {
-    border-left: 5px solid #6dc4b6;
-    background-color: #00000033;
-    border-radius: 10px 0px 0px 10px;
+  border-left: 5px solid #6dc4b6;
+  background-color: #00000033;
+  border-radius: 10px 0px 0px 10px;
 }
 
 a:hover {
@@ -38,8 +38,4 @@ img {
   height: 1.5rem;
   margin-top: 10px;
   aspect-ratio: fill;
-}
-
-@media (max-width: 768px) {
-  
 }

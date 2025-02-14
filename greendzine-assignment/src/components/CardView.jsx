@@ -1,15 +1,20 @@
-import React, { useState, useEffect } from 'react';
-import '../styles/CardView.css';
-import validateEmail from '../utilities/validateEmail';
-import generateOTP from '../utilities/otpGenerator';
-import { Navigate, useNavigate } from 'react-router-dom';
+import React, { useState, useEffect } from "react";
+import "../styles/CardView.css";
+import generateOTP from "../utilities/otpGenerator";
+import { Navigate, useNavigate } from "react-router-dom";
 
-const CardView = ({ heading, placeholder, btnText, isResentOtpContainerHidden, onButtonTap}) => {
+const CardView = ({
+  heading,
+  placeholder,
+  btnText,
+  isResentOtpContainerHidden,
+  onButtonTap,
+}) => {
   const [inputFieldValue, setInputFieldValue] = useState("");
   const [timeLeft, setTimeLeft] = useState(30); // Timer starts at 30 seconds
   const [isTimerRunning, setIsTimerRunning] = useState(true); // Control timer state
   const navigate = useNavigate();
-  
+
   // Start the timer as soon the page loads
   useEffect(() => {
     let interval;
@@ -29,7 +34,7 @@ const CardView = ({ heading, placeholder, btnText, isResentOtpContainerHidden, o
   const formatTime = (seconds) => {
     const minutes = Math.floor(seconds / 60);
     const remainingSeconds = seconds % 60;
-    return `${minutes}:${remainingSeconds < 10 ? '0' : ''}${remainingSeconds}`;
+    return `${minutes}:${remainingSeconds < 10 ? "0" : ""}${remainingSeconds}`;
   };
 
   const handleResendOtp = () => {
@@ -56,12 +61,34 @@ const CardView = ({ heading, placeholder, btnText, isResentOtpContainerHidden, o
             name=""
             id=""
           />
-          <div className={`resend-otp-and-timer-container ${isResentOtpContainerHidden ? 'hidden' : ''}`}>
-            <button className={`${isTimerRunning ? 'resend-otp-btn-disabled' : 'resend-otp-btn-enabled'}`} onClick={handleResendOtp} disabled={isTimerRunning}>resend otp</button>
-            <span className={`${isTimerRunning ? 'timer-span-enabled' : 'timer-span-disabled'}`}>{formatTime(timeLeft)} sec</span>
+          <div
+            className={`resend-otp-and-timer-container ${
+              isResentOtpContainerHidden ? "hidden" : ""
+            }`}
+          >
+            <button
+              className={`${
+                isTimerRunning
+                  ? "resend-otp-btn-disabled"
+                  : "resend-otp-btn-enabled"
+              }`}
+              onClick={handleResendOtp}
+              disabled={isTimerRunning}
+            >
+              resend otp
+            </button>
+            <span
+              className={`${
+                isTimerRunning ? "timer-span-enabled" : "timer-span-disabled"
+              }`}
+            >
+              {formatTime(timeLeft)} sec
+            </span>
           </div>
         </div>
-        <button className="button" onClick={() => onButtonTap(inputFieldValue)}>{btnText}</button>
+        <button className="button" onClick={() => onButtonTap(inputFieldValue)}>
+          {btnText}
+        </button>
       </div>
       <div className="second-container">
         <p>Web Application with Analytics Dashboard</p>
