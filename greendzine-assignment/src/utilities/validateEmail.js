@@ -1,6 +1,6 @@
 const validateEmail = (email) => {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[a-zA-Z]{2,}$/;
+    const emailRegex = /^[^\s@]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
     return emailRegex.test(email);
 };
 
-export default validateEmail
+export default validateEmail;

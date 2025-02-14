@@ -1,7 +1,5 @@
 import React from 'react';
 import '../styles/SideMenu.css';
-// import HomeIcon from '/assets/home-icon.svg';
-// import SettingsIcon from '/assets/settings-icon.svg';
 
 const SideMenu = () => {
     return(

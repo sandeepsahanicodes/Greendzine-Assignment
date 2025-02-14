@@ -6,7 +6,6 @@ import InventoryChart from "../components/charts/InventoryChart";
 import OrdersChart from "../components/charts/OrdersChart";
 import BatteryDonutChart from "../components/charts/BatteryDonutChart";
 import MarginChart from "../components/charts/MarginChart";
-
 import "../styles/Dashboard.css";
 
 const Dashboard = () => {
