@@ -22,7 +22,7 @@ const Login = () => {
     if (validateEmail(email)) {
       createOtp();
     } else {
-      alert("Please a valid email.");
+      alert("Please enter a valid email.");
     }
   };
 
